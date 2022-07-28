@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/*CORES PRINCIPAIS*/
+
+:root {
+    --blue: #00CAD1;
+    --blue-dark: #205067;
+    --white: #FFF;
+    --yellow: yellow;
+    --green: #286E70;
+    --gray: #778B97;
+    --gray-dark: #7b7979;
+    --black: black;
+}
+
+#topo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--blue);
+}
+
+#topo-logo img {
+    height: 60px;
+}
+
+#topo-links {
+    margin-left: 15px;
+    padding: 10px;
+}
+
+#topo-links a {
+    color: var(--white);
+    text-decoration: none;
+    margin: 5px;
+}
+
+#topo-links a:hover {
+    color: var(--blue-dark);
+    border-bottom: solid 1px var(--yellow);
+}
+
+#especialidades nav {
+    display: flex;
+    justify-content: center;
+    padding: 30px 30px 50px 30px;
+}
+
+#especialidades a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: var(--gray);
+}
+
+#especialidades a:hover {
+    border-bottom: solid 1px var(--blue);
+    color: var(--blue-dark)
+}
+
+#especialidades h2 {
+    text-align: center;
+    color: var(--gray);
+}
+
+.especialistas-topo {
+    max-width: 1024px;
+    padding: 30px;
+}
+
+.especilistas-descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--gray);
+}
+
+.especilistas-imagem {
+    display: flex;
+    height: 240px;
+    padding: 30px 20px 0 20px;
+}
+
+.especilistas-imagem img {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.especialistas-horarios {
+    width: 70%;
+    height: 100%;
+    border-spacing: 0;
+}
+
+.especialistas-horarios th,
+td {
+    padding: 0 10px;
+}
+
+.especialistas-horarios th {
+    background: var(--blue);
+    color: var(--white);
+    text-align: left;
+}
+
+.especialistas-horarios tr:nth-child(even) {
+    color: var(--white);
+    background: var(--gray-dark);
+}
+
+.especialistas-horarios tr:nth-child(odd) {
+    background: var(--white);
+    color: var(--gray-dark);
+}
+
+.especilistas-tabela th {
+    height: 30px;
+}
+
+#rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--green);
+    margin-top: 35px;
+}
+
+#rodape p {
+    color: var(--white);
+}
+
+#rodape img {
+    height: 60px;
+}
+
+footer #rodape-logo {
+    text-align: center;
+    padding: 20px;
+}
