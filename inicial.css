@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#topo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: #00CAD1;
+}
+
+#topo-logo img {
+    height: 60px;
+}
+
+#topo-links {
+    margin-left: 15px;
+    padding: 10px;
+}
+
+#topo-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 5px;
+}
+
+#topo-links a:hover {
+    color: #205067;
+    border-bottom: solid 1px yellow;
+}
+
+#sobre-topo {
+    background-image: url('recepcao.png');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 15vw;
+}
+
+#sobre-descricao h2 {
+    max-width: 1024px;
+    color: #fff;
+}
+
+#sobre-resumo {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sobre-resumo h3,
+p {
+    color: #778B97;
+    padding: 7px;
+}
+
+#sobre-beneficios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px 30px 30px;
+    color: #778B97;
+}
+
+#especialidades-topo {
+    color: #778B97;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#especialidades-imagem {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#especialidades-imagem figure {
+    margin: 10px;
+    width: calc(100% / 3 - 20px);
+    box-shadow: -10px 10px 50px 2px #778B97;
+}
+
+#especialidades-imagem img {
+    width: 100%;
+}
+
+#especialidades-imagem figcaption {
+    text-align: center;
+    padding: 10px;
+}
+
+#especialidades-horario {
+    display: flex;
+    justify-content: center;
+    padding: 0 30px 30px 30px;
+}
+
+#especialidades-horario a {
+    background: #4FCBD1;
+    border-radius: 12px;
+    padding: 7px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#especialidades-horario a:hover {
+    background: #205067;
+}
+
+#contato {
+    padding: 20px;
+}
+
+#contato h3,
+p {
+    text-align: center;
+    color: #778B97;
+}
+
+#rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #286E70;
+}
+
+#rodape p {
+    color: #fff;
+}
+
+#rodape img {
+    height: 60px;
+}
+
+footer #rodape-logo {
+    text-align: center;
+}
+
+
+/*RESPONSIVO*/
+
+@media (min-width: 320px) and (max-width:425px) {
+    #topo {
+        display: flex;
+        flex-direction: column;
+    }
+    #topo nav {
+        border-top: 2px #44B3B9 solid;
+    }
+    #topo-links {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    #sobre-topo {
+        height: 200px;
+    }
+    #sobre-descricao h2 {
+        font-size: 17px;
+    }
+    #sobre-beneficios img {
+        display: none;
+    }
+    #sobre-beneficios {
+        text-align: center;
+    }
+    #especialidades-imagem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #especialidades-imagem figure {
+        width: calc(100% - 20px);
+        box-shadow: none;
+    }
+    #contato {
+        text-align: center;
+    }
+}
+
+
+/*Reponsividade 2*/
+
+@media (min-width: 426px) and (max-width:768px) {
+    #sobre-topo {
+        height: 300px;
+    }
+    #especialidades-imagem {
+        justify-content: center;
+    }
+    #especialidades-imagem figure {
+        width: calc(100% / 2 - 40px);
+        box-shadow: none;
+        text-transform: uppercase;
+    }
+}
+
+
+/*Reponsividade 3*/
+
+@media (min-width: 769px) and (max-width:1024px) {
+    #sobre-topo {
+        max-height: 400px;
+    }
+    #especialidades-imagem figure {
+        box-shadow: none;
+    }
+}
+
+
+/*Responsividade final*/
+
+@media (min-width: 1025px) {
+    #sobre-topo {
+        max-height: 500px;
+    }
+    #especialidades-imagem figure {
+        box-shadow: none;
+    }
+}
