@@ -19,7 +19,7 @@ body {
     --green: #286E70;
     --gray: #778B97;
     --gray-dark: #7b7979;
-    --black: black;
+    --black: rgb(46, 45, 45);
 }
 
 #topo {
@@ -169,7 +169,7 @@ footer #rodape-logo {
         flex-wrap: wrap;
     }
     #especialidades a {
-        border-bottom: solid 1px var(--gray-dark);
+        border-bottom: solid 1px var(--blue-new);
         margin: 3px;
     }
     #especialidades h2 {
@@ -178,6 +178,30 @@ footer #rodape-logo {
     }
     .especilistas-imagem img {
         display: none;
+    }
+    .especialistas-horarios {
+        width: 100%;
+    }
+}
+
+@media (min-width:426px) and (max-width:768px) {
+    #sobre-topo {
+        height: 300px;
+    }
+    #especialidades a {
+        border-bottom: solid 1px var(--blue-new);
+        margin: 3px;
+        color: var(--black);
+    }
+    #especialidades h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .especilistas-imagem img {
+        display: none;
+    }
+    .especilistas-descricao {
+        text-align: center;
     }
     .especialistas-horarios {
         width: 100%;
