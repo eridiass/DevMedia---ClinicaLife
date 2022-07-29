@@ -171,6 +171,7 @@ footer #rodape-logo {
     #especialidades a {
         border-bottom: solid 1px var(--blue-new);
         margin: 3px;
+        color: var(--black);
     }
     #especialidades h2 {
         font-size: 20px;
@@ -205,5 +206,13 @@ footer #rodape-logo {
     }
     .especialistas-horarios {
         width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+    #especialidades a {
+        border-bottom: solid 1px var(--blue-new);
+        margin: 3px;
+        color: var(--black);
     }
 }
