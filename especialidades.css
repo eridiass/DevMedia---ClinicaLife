@@ -13,6 +13,7 @@ body {
 :root {
     --blue: #00CAD1;
     --blue-dark: #205067;
+    --blue-new: #44B3B9;
     --white: #FFF;
     --yellow: yellow;
     --green: #286E70;
@@ -73,7 +74,6 @@ body {
 }
 
 .especialistas-topo {
-    /*max-width: 1024px;*/
     padding: 30px;
 }
 
@@ -146,4 +146,40 @@ td {
 footer #rodape-logo {
     text-align: center;
     padding: 20px;
+}
+
+
+/*RESPONSIVO*/
+
+@media (max-width:425px) {
+    #topo {
+        display: flex;
+        flex-direction: column;
+    }
+    #topo nav {
+        border-top: 2px var(--blue-new) solid;
+    }
+    #topo-links {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    #especialidades nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #especialidades a {
+        border-bottom: solid 1px var(--gray-dark);
+        margin: 3px;
+    }
+    #especialidades h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .especilistas-imagem img {
+        display: none;
+    }
+    .especialistas-horarios {
+        width: 100%;
+    }
 }
